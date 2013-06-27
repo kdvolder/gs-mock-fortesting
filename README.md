@@ -26,8 +26,8 @@ to the root of the github project it is contained within.
 Common use cases:
 -----------------
 
-Projects that do not have any codesets that STS can import should the following
-in '.codesets.json':
+Projects that do not have any codesets that STS can import should put 
+the following in '.codesets.json':
 
      []
         
@@ -38,3 +38,17 @@ the following in '.codesets.json':
          "name": "default",
          "dir": "."
      ]
+     
+Projects that have a code set that doesn't have build logic 
+should exclude those codesets from STS imports.
+This is because a codeset lacking build logic can not beimported 
+into STS as a project. E.g. the "gs-gradle" has an initial codeset
+that lacks build logic. Its ".codesets.json" to declare that only the
+"complete" code set is available on this guide as follows:
+
+     [
+         "name" : "complete",
+         "dir" : "complete"
+     ]
+
+

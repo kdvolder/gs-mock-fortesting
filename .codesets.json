@@ -1,1 +1,10 @@
-[]
+[
+	{
+		"name" : "initial",
+		"dir" : "initial"
+	},
+	{
+		"name" : "complete",
+		"dir" : "done"
+	}
+]
