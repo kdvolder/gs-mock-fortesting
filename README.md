@@ -41,9 +41,9 @@ the following in '.codesets.json':
      
 Projects that have a code set that doesn't have build logic 
 should exclude those codesets from STS imports.
-This is because a codeset lacking build logic can not beimported 
+This is because a codeset lacking build logic can not be imported 
 into STS as a project. E.g. the "gs-gradle" has an initial codeset
-that lacks build logic. Its ".codesets.json" to declare that only the
+that lacks build logic. Its ".codesets.json" declares that only the
 "complete" code set is available on this guide as follows:
 
      [
