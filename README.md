@@ -34,10 +34,10 @@ the following in '.codesets.json':
 Projects that have only one codeset that is 'the entire project' should put
 the following in '.codesets.json':
 
-     [
+     [{
          "name": "default",
          "dir": "."
-     ]
+     }]
      
 Projects that have a code set that doesn't have build logic 
 should exclude those codesets from STS imports.
@@ -46,9 +46,9 @@ into STS as a project. E.g. the "gs-gradle" has an initial codeset
 that lacks build logic. Its ".codesets.json" declares that only the
 "complete" code set is available on this guide as follows:
 
-     [
+     [{
          "name" : "complete",
          "dir" : "complete"
-     ]
+     }]
 
 
